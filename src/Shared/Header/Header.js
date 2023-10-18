@@ -14,7 +14,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand className='flex' as={Link} to="/">
                         <img className='ml-5 mr-2' height={100} src={logo} alt="" />
-                        <Nav.Link className='pl-0 font-bold' as={Link} to="/">E-Coaching</Nav.Link>
+                        <Nav.Link className='pl-0 font-extrabold' as={Link} to="/">E-Coaching</Nav.Link>
                     </Navbar.Brand>
                     {/* <Nav.Link as={Link} to="/">E-Coaching</Nav.Link> */}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,7 +37,7 @@ const Header = () => {
                         <Nav>
                             {/* <Nav.Link as={Link} to="about">About</Nav.Link> */}
                             <img className=' mr-2' height={100} src={cart} alt="" />
-                            <button className='flex btn btn-link text-white text-decoration-none bg-green-600' >
+                            <button className='flex btn btn-link text-white text-decoration-none bg-green-600 text-xs' >
                                 <img className=' mr-2 ' height={100} src={profileIcon} alt="" />
                                 Signin/Register</button>
                             {/* <button className='btn btn-link text-black text-decoration-none' >register</button> */}
