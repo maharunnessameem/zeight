@@ -1,10 +1,16 @@
-
+import { Route, Routes } from "react-router-dom";
+import Header from "./Shared/Header/Header";
+import "./App.css"
 
 
 function App() {
   return (
-    <div className="bg-slate-600">
-      knvsklhglkshdlgks
+    <div className="">
+      <Header></Header>
+      {/* <Routes>
+        <Route></Route>
+      </Routes> */}
+      fgdhgfjgj
     </div>
   );
 }
