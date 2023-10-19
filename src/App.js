@@ -1,19 +1,11 @@
-import { Route, Routes } from "react-router-dom";
-import Header from "./Shared/Header/Header";
-import "./App.css"
-import Footer from "./Shared/Footer/Footer";
-import Banner from "./Home/Banner/Banner";
+
+import Home from "./Home/Home";
 
 
 function App() {
   return (
     <div className="">
-      <Header></Header>
-      <Banner></Banner>
-      {/* <Routes>
-        <Route></Route>
-      </Routes> */}
-      <Footer></Footer>
+      <Home></Home>
     </div>
   );
 }
