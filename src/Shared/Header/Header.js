@@ -31,7 +31,7 @@ const Header = () => {
                         <Nav>
 
                             <Link to="/"> <img className=' mr-2' height={100} src={cart} alt="" /></Link>
-                            <button className='flex btn btn-link text-white text-decoration-none bg-green-600 text-xs hover:bg-slate-500' >
+                            <button className='flex btn btn-link text-white text-decoration-none bg-green-500 text-xs hover:bg-slate-500' >
                                 <img className=' mr-2 ' height={100} src={profileIcon} alt="" />
                                 Signin/Register</button>
 

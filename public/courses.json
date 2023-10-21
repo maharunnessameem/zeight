@@ -2,37 +2,37 @@
     {
         "id": 1,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
+        "coursename": "Applied Data Science Specialization certificate",
         "img": "https://i.ibb.co/pwPsg7F/course1.png"
     },
     {
         "id": 2,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
+        "coursename": "Deep Learning Specialization Professional Certificate",
         "img": "https://i.ibb.co/D7fRpDN/course2.png"
     },
     {
         "id": 3,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-        "img": "https://i.ibb.co/pwPsg7F/course1.png"
+        "coursename": "Back-end Development Professional Certificate",
+        "img": "https://i.ibb.co/rbsXT6W/course3.png"
     },
     {
         "id": 4,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-        "img": "https://i.ibb.co/D7fRpDN/course2.png"
+        "coursename": "IBM Back-End Development Professional Certificate",
+        "img": "https://i.ibb.co/NtM32m1/course4.png"
     },
     {
         "id": 5,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
+        "coursename": "Deep Learning Specification Professional Certificate",
         "img": "https://i.ibb.co/pwPsg7F/course1.png"
     },
     {
         "id": 6,
         "name": "Adam John",
-        "coursename": "Deep Learning Specification",
+        "coursename": "Deep Learning Specification Professional Certificate",
         "img": "https://i.ibb.co/D7fRpDN/course2.png"
     }
 ]

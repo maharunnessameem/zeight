@@ -7,9 +7,16 @@ import "./Courses.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faClock, faStar, faUser, faVideo } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 const Courses = () => {
+    const [courses, setCourses] = useState([]);
+    useEffect(() => {
+        fetch('courses.json')
+            .then((res) => res.json())
+            .then((data) => setCourses(data));
+    }, []);
     const settings = {
 
         dots: true,
@@ -60,7 +67,7 @@ const Courses = () => {
             </div>
             <div className='mt-30 courses '>
                 <Slider {...settings}>
-                    {coursesList.map((d) => (
+                    {courses.map((d) => (
                         <div className='bg-white h-[450px]  rounded-xl  card p-2 shadow'>
                             <div className='h-50 rounded-t-xl bg-slate-500 flex justify-center items-center  space-y-3'>
                                 <img key={d.id} src={d.img} alt='' className='h-44 w-44' />
@@ -129,49 +136,6 @@ const Courses = () => {
 };
 
 
-const coursesList = [
-    {
-        "id": 1,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
 
-        "img": "https://i.ibb.co/pwPsg7F/course1.png"
-    },
-    {
-        "id": 2,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-
-        "img": "https://i.ibb.co/D7fRpDN/course2.png"
-    },
-    {
-        "id": 3,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-
-        "img": "https://i.ibb.co/pwPsg7F/course1.png"
-    },
-    {
-        "id": 4,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-
-        "img": "https://i.ibb.co/D7fRpDN/course2.png"
-    },
-    {
-        "id": 5,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-
-        "img": "https://i.ibb.co/pwPsg7F/course1.png"
-    },
-    {
-        "id": 6,
-        "name": "Adam John",
-        "coursename": "Deep Learning Specification",
-
-        "img": "https://i.ibb.co/D7fRpDN/course2.png"
-    }
-]
 
 export default Courses;
