@@ -1,25 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import CoursesCard from './CoursesCard';
+import "./CoursesComponent.css"
 
 const CoursesComponent = () => {
-    const [course, setCourses] = useState([]);
+    const [courses, setCourses] = useState([]);
     useEffect(() => {
-        fetch(`./coursesData.json`)
+        fetch('courses.json')
             .then((res) => res.json())
             .then((data) => setCourses(data));
     }, []);
     return (
-        <div className='container mx-auto  p-8 mt-10'>
+        <div id='courses' className='container mx-auto  p-8 mt-10'>
             <h1 className='font-bold text-2xl text-center'>
-                Life Spring Professionals
+                All Courses
             </h1>
 
-            <div className=' flex flex-wrap -mx-4'>
-                {course.map((courses) => (
+            <div className=' flex mx-4 courses-container'>
+                {courses.map(course =>
                     <CoursesCard
-                        courses={courses}
-                        key={courses.id}></CoursesCard>
-                ))}
+                        course={course}
+                        key={course.id}></CoursesCard>
+                )}
             </div>
         </div>
     );

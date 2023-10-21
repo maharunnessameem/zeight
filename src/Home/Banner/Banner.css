@@ -1,0 +1,17 @@
+/* .banner {
+    margin-left: 40px;
+    margin-right: 40px;
+} */
+@media only screen and (max-width:576px) {
+    .banner {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .banner {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}

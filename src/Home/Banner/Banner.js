@@ -1,12 +1,13 @@
 import React from 'react';
 import banner from "../../images/banner.png";
 import SearchBar from '../../Component/SearchBar';
+import "./Banner.css"
 
 const Banner = () => {
     return (
         <div>
-            <div className='min-h-full  md:mx-52  mb-5 lg:mb-10'>
-                <div className='grid lg:grid-cols-2 lg:gap-8 justify-center items-center sm:flex-row '
+            <div className='min-h-full  md:mx-52 sm:mx-20 mb-5 lg:mb-10'>
+                <div className='grid lg:grid-cols-2 lg:gap-8 justify-center items-center sm:flex-row banner '
                 // 'lg:flex flex-col lg:flex-row 
                 // justify-center items-center'
                 >
